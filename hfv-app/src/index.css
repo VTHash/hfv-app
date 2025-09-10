@@ -27,7 +27,7 @@
 /* Global element styles — use raw CSS values (no @apply here) */
 html, body, #root {
   height: 100%;
-}
+}l
 
 body {
   margin: 0;
