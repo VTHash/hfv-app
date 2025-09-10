@@ -1,11 +1,8 @@
 [build]
-  command = "npm run build"
-    publish = "dist"
-      functions = "netlify/functions"
-
-      [functions]
-        node_bundler = "esbuild"
-          external_node_modules = ["node-fetch"]
+base    = "hfv-app"
+  command = "npm ci && npm run build"
+    publish = "hfv-app/dist"
+      functions = "hfv-app/netlify/functions"
 
           [[redirects]]
             from = "/*"
